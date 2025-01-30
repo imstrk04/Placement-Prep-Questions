@@ -14,7 +14,7 @@ def subsetSum(arr, sum):
 
     for i in range(n + 1):
         t[i][0] = True
-
+        
     for i in range(len(arr) + 1):
         for j in range(sum + 1):
             if i == 0:
