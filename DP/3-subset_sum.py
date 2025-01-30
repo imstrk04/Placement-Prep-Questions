@@ -14,14 +14,7 @@ def subsetSum(arr, sum):
 
     for i in range(n + 1):
         t[i][0] = True
-        
-    for i in range(len(arr) + 1):
-        for j in range(sum + 1):
-            if i == 0:
-                t[i][j] = False
-            if j == 0:
-                t[i][j] = True
-    
+
     # Knapsack Wt arr => arr []
     # Knapsack W => sum
 
@@ -38,7 +31,7 @@ def subsetSum(arr, sum):
 
 
 arr = [2, 3, 7, 8, 10]
-sum = 22
+sum = 11
 
 
 subsetSum(arr, sum)
