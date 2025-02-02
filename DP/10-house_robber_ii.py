@@ -1,14 +1,13 @@
+# House Robber 2
 
 def rob(nums):
-
     if len(nums) == 1:
         return nums[0]
     
     def helper(a):
         if not a:
             return 0
-
-            
+        
         n = len(a)
 
         prev2 = 0
@@ -38,3 +37,7 @@ def rob(nums):
     ans1, ans2 = helper(arr1), helper(arr2)
 
     return max(ans1, ans2)
+
+a = [2,3,2]
+ans = rob(a)
+print(ans)
