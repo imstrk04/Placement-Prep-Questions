@@ -1,6 +1,7 @@
-# Memoization - Knapsack
-n = 4
-W = 7  # Knapsack capacity
+# Memoization - Knapsack 
+# Aditya Verma
+n = int(input("Enter n: "))
+W = int(input("Enter W: "))  # Knapsack capacity
 
 wt = [1, 3, 4, 5]
 val = [1, 4, 5, 7]
